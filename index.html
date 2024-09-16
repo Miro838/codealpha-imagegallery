@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Image gallery</h1>
+    <div class="gallery-container" style="align-items: center;">
+        <!-- Thumbnail images -->
+        <div class="thumbnails">
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&w=100&h=100&fit=crop" onclick="showImage(0)" alt="Image 1">
+            <img src="https://images.unsplash.com/photo-1725714354941-02986971c66b?crop=entropy&cs=tinysrgb&w=100&h=100&fit=crop" onclick="showImage(1)" alt="Image 2">
+            <img src="https://images.unsplash.com/photo-1654676653686-0b5e4a8ae190?crop=entropy&cs=tinysrgb&w=100&h=100&fit=crop" onclick="showImage(2)" alt="Image 3">
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?crop=entropy&cs=tinysrgb&w=100&h=100&fit=crop" onclick="showImage(3)" alt="Image 4">
+        </div>
+
+        <!-- Full-size image viewer -->
+        <div class="image-viewer" style="align-items: center;">
+            <img id="current-image" src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&w=800&h=500&fit=crop" alt="Main Image">
+            <button class="prev" onclick="prevImage()">❮</button>
+            <button class="next" onclick="nextImage()">❯</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
